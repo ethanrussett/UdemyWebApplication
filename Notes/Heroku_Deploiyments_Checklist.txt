@@ -1,0 +1,10 @@
+Deployment Checklist
+
+Dynamic Port Binding - Heroku tells us which port our aoo will use, so we need to make sure we listen to a ver particular port
+
+Specify Node Enviroment - We want specify version of Node and NPM, We do this in package.json   "engines": {"node" : "12.18.2", "npm" : "6.14.5"}
+  
+
+Specify start script - Instruct Heroku What command to run to start our server running, we do this in package.json under "scripts" : { "start": "node index.js" }
+
+Create .gitignore -  We dont want to include dependencies, Heroku will do that for us

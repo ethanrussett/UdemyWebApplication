@@ -1,0 +1,30 @@
+Starting the Web App for Udemy Course
+
+- When a user goes to emaily.com they will get send html and js files that will contain information, and it will give them some content. 
+
+- Our app doesnt know what to send data, the app will read from Mongo DB for the information
+
+- It will do this by using an Express api to get this information
+
+React App < --(JSON)-- > Express/Node Api --- > MongoDB
+
+To start developing are app we create the application using "npm init"
+
+
+NODE VS EXPRESS
+
+Node - Javascript runtime used to execute code outside the browser
+
+Express - Library that runs un the Node runtime. Has helpres to make dealing with HTTP traffic easier
+
+How it will work
+
+Incomming HTTP request  ---> Prots on your machine --- > Express --- Route Handler 1
+				  (Node) 		  	 --- Route Handler 2   -- 
+								 --- Route Handler 3 	|			
+					<------------------Response----------------------
+
+
+
+We will start by creating the root file index.js
+
